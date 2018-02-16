@@ -12,6 +12,7 @@ DATE: February 15, 2018
 A simple tic tac toe game for two players. 
 
 instead of a 
+
   |  | 
 --------
   |  | 
@@ -50,7 +51,7 @@ class TicTacToe:
         function that prints out the board 
         """
 
-        print(self.board[0], self.board[1], self.board[2])
+        print(self.board[0], self.board[1], self.board[2])          #print the board 3 x 3
         print(self.board[3], self.board[4], self.board[5])
         print(self.board[6], self.board[7], self.board[8])
 
@@ -58,14 +59,18 @@ class TicTacToe:
     def place_marker(self, player):
 
         """
-        function to place O or X on to the display_board
+        function to place O or X on to the display_board 
+        under the right conditions
         """
 
         if player == "player1": 
             try: 
                 pos = int(input("Player 1 move(O): ")) -1
                 self.space_check(player, pos)
-            except ValueError: 
+            except ValueError:                                      #if player inputs a value other than a number
+                print("please enter a number between 1-9")
+                self.place_marker(player)
+            except IndexError: 
                 print("please enter a number between 1-9")
                 self.place_marker(player)
         elif player == "player2": 
@@ -75,17 +80,20 @@ class TicTacToe:
             except ValueError: 
                 print("please enter a number between 1-9")
                 self.place_marker(player)
-
+            except IndexError: 
+                print("please enter a number between 1-9")
+                self.place_marker(player)
         self.display_board()
 
 
     def space_check(self, player, pos): 
 
         """
-        check if it is valid place for player move. if valid, show board and check if won.
+        check if it is valid place for player move. 
+        if valid, show board and check if won.
         """
 
-        if str(self.board[pos]).strip().isalpha(): 
+        if str(self.board[pos]).strip().isalpha():                  #if a marker is already there
             print("You cannot mark there.")
             self.place_marker(player)
 
@@ -118,13 +126,14 @@ class TicTacToe:
             self.replay()
 
         else: 
-            self.full_board_check(player, self.board)
+            self.full_check(player, self.board)
 
 
-    def full_board_check(self, player, board): 
+    def full_check(self, player, board): 
 
         """
-        checks if board is full. if not, continue
+        check if the board is full. 
+        if not, continue
         """
 
         for p in board: 
@@ -143,9 +152,9 @@ class TicTacToe:
         asks player if he or she wants to play again.
         """
 
-        print("Do you wish to play again?")
+        print("Do you wish to play again? (Y/N)")
         ans = input(">>> ")
-        if ans.lower() == "y": 
+        if ans.lower() == "y":                                          #accept both upper and lower inputs
             self.__init__()
             self.choose_move()
         elif ans.lower() == "n": 
@@ -164,5 +173,6 @@ class TicTacToe:
 
 
 if __name__ == "__main__":
+
     game = TicTacToe()
     game.choose_move()
