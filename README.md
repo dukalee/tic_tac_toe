@@ -5,15 +5,15 @@ Tic Tac Toe\
 PROGRAM NAME: tictactoe.py\
 VERSION: N/A\
 CREATOR: dukalee \
-DATE: February 15, 2018\
+DATE: February 15, 2018
 
-A simple tic tac toe game for two players. 
+A simple tic tac toe game for two players.
 
 instead of a 
   |  | 
---------
+--------\
   |  | 
---------
+--------\
   |  | 
   
 like board,  this program displays the board in such fashion: 
