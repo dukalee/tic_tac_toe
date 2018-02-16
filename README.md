@@ -10,16 +10,16 @@ DATE: February 15, 2018
 A simple tic tac toe game for two players.
 
 instead of a 
-  |  | 
---------\
-  |  | 
---------\
-  |  | 
+  |  | \
+--------
+  |  | \
+--------
+  |  | \
   
 like board,  this program displays the board in such fashion: 
 
-[1] [2] [3] 
-[4] [5] [6] 
+[1] [2] [3]\
+[4] [5] [6]\
 [7] [8] [9] 
 
 How to Play
