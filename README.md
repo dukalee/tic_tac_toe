@@ -1,11 +1,11 @@
 Simple tic tac toe game Project in python3
 ====================
 
-Tic Tac Toe
-PROGRAM NAME: tictactoe.py
-VERSION: N/A
-CREATOR: dukalee 
-DATE: February 15, 2018
+Tic Tac Toe\
+PROGRAM NAME: tictactoe.py\
+VERSION: N/A\
+CREATOR: dukalee \
+DATE: February 15, 2018\
 
 A simple tic tac toe game for two players. 
 
