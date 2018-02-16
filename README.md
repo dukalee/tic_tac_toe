@@ -1,22 +1,16 @@
-Simple tic tac toe game Project in python3
+Simple tic tac toe game 
 ====================
 
+Python3\
 Tic Tac Toe\
 PROGRAM NAME: tictactoe.py\
 VERSION: N/A\
-CREATOR: dukalee \
+CREATOR: dukalee\
 DATE: February 15, 2018
 
-A simple tic tac toe game for two players.
+A simple tic tac toe game for two players.\
 
-instead of a 
-  |  | \
---------
-  |  | \
---------
-  |  | \
-  
-like board,  this program displays the board in such fashion: 
+The playing board is designed in this fashion: 
 
 [1] [2] [3]\
 [4] [5] [6]\
