@@ -8,7 +8,7 @@ VERSION: N/A\
 CREATOR: dukalee\
 DATE: February 15, 2018
 
-A simple tic tac toe game for two players.\
+A simple tic tac toe game for two players.
 
 The playing board is designed in this fashion: 
 
@@ -18,6 +18,6 @@ The playing board is designed in this fashion:
 
 How to Play
 ----------
-when the game starts, it is randomly chosen whether player1 or player2 goes first. 
-if it is your turn, input the number of the position where you wish to place your mark. 
+when the game starts, it is randomly chosen whether player1 or player2 goes first.\ 
+if it is your turn, input the number of the position where you wish to place your mark.\ 
 if a player wins or if there is a draw, it will prompt for a replay. 
