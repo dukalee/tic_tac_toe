@@ -1,23 +1,25 @@
-Simple tic tac toe game 
-====================
+# Project Title
 
-Python3\
-Tic Tac Toe\
-PROGRAM NAME: tictactoe.py\
-VERSION: N/A\
-CREATOR: dukalee\
-DATE: February 15, 2018
+Tic Tac Toe Program
 
-A simple tic tac toe game for two players.\
+## Program Description 
 
-The playing board is designed in this fashion: 
+Made for teaching python programming. 
+Simple, very well-known 2-player game 
 
-[1] [2] [3]\
-[4] [5] [6]\
-[7] [8] [9] 
+## How to Play 
 
-How to Play
-----------
-when the game starts, it is randomly chosen whether player1 or player2 goes first. 
-if it is your turn, input the number of the position where you wish to place your mark. 
-if a player wins or if there is a draw, it will prompt for a replay. 
+Player 1 : O 
+Player 2 : X 
+
+At first, one player is chosen at random to go first. 
+Player who places three in a row (row, column, diagonal) first wins the game. 
+
+## Creator
+
+Name: dukalee 
+Contact: dukalee@naver.com
+
+## Version History
+
+*N/A
