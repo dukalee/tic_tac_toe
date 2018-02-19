@@ -1,38 +1,5 @@
 #!usr/bin/python3
 
-"""
-Tic Tac Toe
-
-PROGRAM NAME: tictactoe.py
-VERSION: N/A
-CREATOR: dukalee 
-DATE: February 15, 2018
-======================
-
-A simple tic tac toe game for two players. 
-
-instead of a 
-
-  |  | 
---------
-  |  | 
---------
-  |  | 
-
-like board,  this program displays the board in such fashion: 
-
-[1] [2] [3] 
-[4] [5] [6] 
-[7] [8] [9] 
-
-How to Play
-======================
-
-when the game starts, it is randomly chosen whether player1 or player2 goes first. 
-if it is your turn, input the number of the position where you wish to place your mark. 
-if a player wins or if there is a draw, it will prompt for a replay. 
-"""
-
 import random 
 
 class TicTacToe: 
@@ -45,15 +12,34 @@ class TicTacToe:
             self.board.append([i+1]) 
 
 
+    def instructions(self): 
+
+        print("""
+
+                Tic Tac Toe Game 
+
+                  Player 1 : O 
+                  Player 2 : X 
+
+    At first, one player is chosen at random to 
+    go first. Player who places three in a row 
+    (row, column, diagonal) first wins the game. 
+
+                   Have Fun!
+
+            """)
+
+        self.choose_move()
+
     def display_board(self): 
 
         """
         function that prints out the board 
         """
 
-        print(self.board[0], self.board[1], self.board[2])          #print the board 3 x 3
-        print(self.board[3], self.board[4], self.board[5])
-        print(self.board[6], self.board[7], self.board[8])
+        print("\t\t ", self.board[0], self.board[1], self.board[2])          #print the board 3 x 3
+        print("\t\t ", self.board[3], self.board[4], self.board[5])
+        print("\t\t ", self.board[6], self.board[7], self.board[8],"\n")
 
 
     def place_marker(self, player):
@@ -102,6 +88,7 @@ class TicTacToe:
                 self.board[pos] = " O "
             elif player == "player2":
                 self.board[pos] = " X "
+            print()
 
         self.display_board()
         self.win_check(player)
@@ -152,7 +139,9 @@ class TicTacToe:
         asks player if he or she wants to play again.
         """
 
-        print("Do you wish to play again? (Y/N)")
+        print("""
+          Do you wish to play again? (Y/N)
+            """)
         ans = input(">>> ")
         if ans.lower() == "y":                                          #accept both upper and lower inputs
             self.__init__()
@@ -175,4 +164,4 @@ class TicTacToe:
 if __name__ == "__main__":
 
     game = TicTacToe()
-    game.choose_move()
+    game.instructions()
