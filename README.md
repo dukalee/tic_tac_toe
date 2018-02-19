@@ -17,7 +17,7 @@ Player who places three in a row (row, column, diagonal) first wins the game.
 
 ## Creator
 
-Name: dukalee 
+Name: dukalee\
 Contact: dukalee@naver.com
 
 ## Version History
