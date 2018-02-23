@@ -15,7 +15,6 @@ class TicTacToe:
     def instructions(self): 
 
         print("""
-
                 Tic Tac Toe Game 
 
                   Player 1 : O 
@@ -28,8 +27,8 @@ class TicTacToe:
                    Have Fun!
 
             """)
-
         self.choose_move()
+
 
     def display_board(self): 
 
@@ -44,10 +43,7 @@ class TicTacToe:
 
     def place_marker(self, player):
 
-        """
-        function to place O or X on to the display_board 
-        under the right conditions
-        """
+        """function to place O or X on to the display_board under the right conditions"""
 
         if player == "player1": 
             try: 
@@ -74,15 +70,11 @@ class TicTacToe:
 
     def space_check(self, player, pos): 
 
-        """
-        check if it is valid place for player move. 
-        if valid, show board and check if won.
-        """
+        """check if it is valid place for player move. if valid, show board and check if won."""
 
         if str(self.board[pos]).strip().isalpha():                  #if a marker is already there
             print("You cannot mark there.")
             self.place_marker(player)
-
         else: 
             if player == "player1": 
                 self.board[pos] = " O "
@@ -97,8 +89,7 @@ class TicTacToe:
     def win_check(self, player): 
 
         """
-        checks for winner. if no winner, check for full board.
-        """
+        checks for winner. if no winner, check for full board."""
         
         if (self.board[0] == self.board[1] == self.board[2] or
             self.board[3] == self.board[4] == self.board[5] or
@@ -108,20 +99,15 @@ class TicTacToe:
             self.board[2] == self.board[5] == self.board[8] or
             self.board[0] == self.board[4] == self.board[8] or 
             self.board[2] == self.board[4] == self.board[6]):
-
             print(player + " win!")
             self.replay()
-
         else: 
             self.full_check(player, self.board)
 
 
     def full_check(self, player, board): 
 
-        """
-        check if the board is full. 
-        if not, continue
-        """
+        """check if the board is full. if not, continue"""
 
         for p in board: 
             if isinstance(p, list): 
@@ -135,9 +121,7 @@ class TicTacToe:
 
     def replay(self): 
 
-        """
-        asks player if he or she wants to play again.
-        """
+        """asks player if he or she wants to play again."""
 
         print("""
           Do you wish to play again? (Y/N)
@@ -152,9 +136,7 @@ class TicTacToe:
 
     def choose_move(self): 
 
-        """
-        using random module, choose who goes first
-        """
+        """using random module, choose who goes first"""
 
         first_move = random.choice(self.players)
         self.display_board()
@@ -162,6 +144,5 @@ class TicTacToe:
 
 
 if __name__ == "__main__":
-
     game = TicTacToe()
     game.instructions()
