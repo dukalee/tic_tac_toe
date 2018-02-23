@@ -29,12 +29,13 @@ Player who places three in a row (row, column, diagonal) first wins the game.
 
 ## Creator
 
-Name: dukalee 
+Name: dukalee\
 Contact: dukalee@naver.com
 
 ## Version History
 
 *N/A
+<<<<<<< HEAD
 =======
 [1] [2] [3] <br>
 [4] [5] [6] <br>
@@ -46,3 +47,5 @@ when the game starts, it is randomly chosen whether player1 or player2 goes firs
 if it is your turn, input the number of the position where you wish to place your mark.<br>
 if a player wins or if there is a draw, it will prompt for a replay. 
 >>>>>>> 5ae2cd8816b20abd72176b852d208fd443cef314
+=======
+>>>>>>> 3707994f8247da39629802dbaae433647ba4643a
