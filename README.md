@@ -1,7 +1,4 @@
-# Project Title
-
-<<<<<<< HEAD
-Tic Tac Toe Program
+# Tic Tac Toe Program
 
 ## Program Description 
 =======
